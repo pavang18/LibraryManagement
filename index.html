@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SREC Library - Sign in</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/books-background.jpeg" alt="Image not available" class="leftFloat">
+        <div class="login-form">
+            <img src="images/srec-logo.jpeg" alt="Image not available">
+            <h4>Sri Ramakrishna Engineering College</h4>
+            <h4>Sign in</h4>
+            <p>The key to happiness is to sign in</p>
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="email" class="label">Email address</label>
+                    <input autocomplete="off" name="email" id="Email" class="input" type="email" placeholder="Enter email..." required>
+                <div>
+                <div class="input-group">
+                    <label class="label">Password</label>
+                    <input autocomplete="off" name="password" id="password" class="input" type="password" placeholder="Enter password..." required>
+                <div>
+                <input type="checkbox" name="showPassword" id="showPassword" onclick="Password()">
+                <label for="showPassword">Show Password</label><br>
+                <span>
+                    <a href="sign-up.html" class="newUser">New user?</a>
+                </span>
+                <br>
+                <button class="button" onclick="submitForm()">
+                    <span class="button-content" id="submitButton">Submit </span>
+                </button>
+                <div class="hidden" id="loadingSpinner" >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
